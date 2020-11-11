@@ -33,6 +33,10 @@ Expected OUTPUT for these sample arguments:
 */
 
 function filterOnPrice(products, maxPrice) {
+  const result=products.filter(function(pascher){
+    return pascher.price<=maxPrice;
+  })
+  return result;
 }
 
 // DON'T TOUCH THIS!

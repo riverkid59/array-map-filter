@@ -26,7 +26,11 @@ Expected OUTPUT for this sample:
 */
 
 function keepStarks(names) {
+  const result=names.filter(function(split){
+    return split.split(" ")[1]==="Stark";
+  })
+  return result;
 }
 
 // DON'T TOUCH THIS!
-module.exports = keepStarks;
+module.exports = keepStarks

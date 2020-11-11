@@ -43,6 +43,15 @@ Expected OUTPUT for this sample
 */
 
 function getFoodCategories(foods) {
+  const result=foods.map(function(macdo) {
+    if(macdo.isVegetarian){
+      return macdo.food+" is suitable for vegetarians"
+    }else
+    {
+      return macdo.food+" is not suitable for vegetarians"
+    }
+  })
+  return result;
 }
 
 
